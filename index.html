@@ -13,33 +13,104 @@
 
         <header>
             
+            <div id="logo">
+                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />   
+            </div>
+
+            <div id="inscrire">
+                <p>S'inscire</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#herbergements">Hébergements</a></li>
+                    <li><a href="#activites">Atcivités</a></li>
+                </ul>
+            </nav>
+
+
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
+
+            <div id="recherche">
+
+                <div id="icon_recherche">
+
+                </div>
+
+                <div id="recherche_section">
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <label for="search"></label>
+                            <input type="text" name="search" id="search" value="Marseille, France" size="20" />
+                        </p>
+                        <input type="submit" value="Rechercher" />
+                    </form>
+                </div>
+
+                <div id="bouton_recherche">
+
+                </div>
+
+            </div>
+
+            <div id="filtres">
+
+                <p>Filtres</p>
+                <div class="filtre">
+
+
+                </div>
+
+            </div>
+
+            <div id="information">
+                
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+           
 
         </header>
         
 
             <!-- Section 1 - Hébergement -->
 
-            <section>
-               <section id="hebergements">
+            <section id="hebergements">
 
-               
-                <h1>Hébergement à Marseille</h1>
+                <section id="hebergement_main">
+
+                <h1>Hébergements à Marseille</h1>
+
+                    <section id="hebergement_vignette">
+
+                    </section>
+                
+                <p>Afficher plus</p>
                 
                 </section> 
 
 
                 <aside>
+
                     <h1>Les plus populaires</h1>
 
+                    <div class="herbergement_populaire">
+
+                    </div>
+
                 </aside>
+
             </section>  
             
              <!-- Section 2 - Activités -->
 
             <section id="activites">
+
                 <h1>Activités à Marseille</h1>
+
+                <div class="activite_vignette">
+
+                </div>
 
 
             </section>
@@ -50,6 +121,8 @@
         <!-- Footer -->
         <footer>
 
+        <div class="bottom">
+
             <h1>A propos</h1>
             <ul>
                 <li>Fonctionnement du site</li>
@@ -57,19 +130,28 @@
                 <li>Données et confidentialité</li>
             
             </ul>
+            
+        </div>
 
+        <div class="bottom">
+        
             <h1>Nos hébergements</h1>
             <ul>
                 <li>Charte qualité</li>
                 <li>Soumettre votre hôtel</li>
             </ul>
 
+        </div>
+
+        <div class="bottom">
 
             <h1>Assistance</h1>
             <ul>
                 <li>Centre d'aide</li>
                 <li>Nous contacter</li>
             </ul>
+
+        </div>
 
         </footer>
     </body>
