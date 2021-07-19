@@ -9,10 +9,121 @@
 
 }
 
+/* Eléments principaux de la page */
+
 body
 {
-
     font-family: ralewaythin, Arial ;
+    margin: 0;
+}
+
+h1
+{
+    font-weight: bold;
+}
+
+
+/* Header */
+
+header
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+#logo
+{
+    display:flex;
+    align-self: left;
+}
+
+#inscription
+{
+    color:#0065FC;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+}
+
+#top
+{
+    display:flex;
+    justify-content: right;
+}
+
+
+
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 30px;
+}
+
+nav a
+{
+    font-size: 1em;
+    color:black;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
     
 }
 
+
+/* Main */
+
+#main
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+/* Footer */
+
+footer
+{
+   background-color: #F2F2F2; 
+   width: 100%; 
+}
+
+h3
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer p
+{
+    font-size: 1em;
+}
+
+#bottom
+ {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0px 32px;
+
+}
+
+.class_bottom
+{
+    width: 30%;
+    padding: 32px 32px;
+   
+}
