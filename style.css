@@ -1,19 +1,12 @@
 /* Définition des polices personnalisées */
 
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('raleway-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Eléments principaux de la page */
 
 body
 {
-    font-family: ralewaythin, Arial ;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 
@@ -22,6 +15,10 @@ h1
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 /* Header */
 
@@ -35,14 +32,6 @@ header
 {
     display:flex;
     align-self: left;
-}
-
-#inscription
-{
-    color:#0065FC;
-    font-weight: bold;
-    display: flex;
-    justify-content: right;
 }
 
 #top
@@ -61,7 +50,7 @@ nav ul
 
 nav li
 {
-    margin-right: 30px;
+    margin-right: 32px;
 }
 
 nav a
@@ -78,9 +67,15 @@ nav a:hover
     
 }
 
+#inscription
+{
+    color:#0065FC;
+    font-weight: bold;
+}
+
 /* Main */
 
-#main
+main
 {
     max-width: 1440px;
     margin: auto;
@@ -98,14 +93,72 @@ nav a:hover
     margin-top: 32px;
 }
 
-
-/*
+#filtres h2
+{
+    display: flex;
+    align-items: center;
+    margin: 0 32px 16px 0;  
+}
 
 .filtre
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #DCDCDC;
+    margin-right: 32px;
+    margin-bottom: 16px;
+    border-radius: 32px;
+    cursor: pointer;
+}
 
 .filtre_icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    margin: -2px;
+}
 
 .filtre_titre
+{
+    margin: 0 16px;
+}
+
+
+.filtre:hover
+{
+    color: #0065FC;
+    background-color: #F2F2F2;
+    transform: scale(1.03);
+}
+
+#information
+{
+    display: flex;
+    align-items: center;
+    margin: 16px 0 32px 0;
+}
+
+#info_icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    border: solid 1px #DCDCDC;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
+  }
+  
+/*
 
 */
 
