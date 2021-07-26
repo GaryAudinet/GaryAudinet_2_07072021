@@ -83,6 +83,56 @@ main
 
 /* Section 1 - Recherche  */
 
+#recherche
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#icon_recherche
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 16px 0px 0px 16px;
+    padding: 16px 22px;
+}
+
+.recherche_input
+{
+    border-top: solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    border-right: none;
+    border-left: none;
+    padding: 0px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    width: 222px;
+}
+
+
+.recherche_input::placeholder
+{
+    color:black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bouton_recherche
+{
+    background-color: #0065FC;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 16px 16px 0px;
+    padding: 0px 25px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+
 /* Section 2 - Filtres  */
 
 
@@ -158,11 +208,12 @@ main
     margin-right: 16px;
   }
   
-/*
-
-*/
 
 /* Section 3 - Hébergements  */
+
+
+
+
 
 /* Section 4 - Activités  */
 

@@ -41,27 +41,16 @@
 
             <!-- Section 1 - Recherche -->
 
-            <div id="recherche">
 
-                <div id="icon_recherche">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-
-                <div id="recherche_section">
-                    <form method="post" action="traitement.php">
-                        <p>
-                            <label for="search"></label>
-                            <input type="search" name="search" id="search" placeholder="Marseille, France" size="20" />
-                        </p>
-                        <input type="submit" value="Rechercher" />
+          <section class="recherche_section"> 
+                    <form id="recherche" method="post" action="traitement.php">
+                      <div id="icon_recherche">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                            <input class="recherche_input" type="search" placeholder="Marseille, France" size="1"/>
+                        <input type="button" class="bouton_recherche" value="Rechercher" />
                     </form>
-                </div>
-
-                <div id="bouton_recherche">
-
-                </div>
-
-            </div>
+          </section> 
 
             <!-- Section 2 - Filtres -->
             
