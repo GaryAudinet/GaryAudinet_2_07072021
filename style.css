@@ -25,53 +25,63 @@ a {
 header
 {
     max-width: 1440px;
-    margin: auto;
+    margin: auto; 
+    display: flex;
 }
 
 #logo
 {
     display:flex;
-    align-self: left;
-}
-
-#top
-{
-    display:flex;
-    justify-content: right;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    
 }
 
 /* Navigation */
 
+#menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+}
+
 nav ul
 {
-    list-style-type: none;
     display: flex;
+    align-items: center;
+    list-style-type: none;
+    
 }
 
-nav li
+.nav a
 {
-    margin-right: 32px;
-}
-
-nav a
-{
-    font-size: 1em;
     color:black;
     text-decoration: none;
+    padding: 34px 32px 16px 32px;
+    border-top: 3px solid transparent;
 }
 
 nav a:hover
 {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
     
 }
 
+/*
 #inscription
 {
     color:#0065FC;
     font-weight: bold;
+    padding: 34px 32px 16px 32px;
+    border-top: 3px solid transparent; 
 }
+*/
 
 /* Main */
 
