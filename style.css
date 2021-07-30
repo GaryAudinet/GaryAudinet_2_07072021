@@ -60,11 +60,16 @@ nav ul
 
 .nav a
 {
-    color:black;
     text-decoration: none;
     padding: 34px 32px 16px 32px;
     border-top: 3px solid transparent;
 }
+
+.nav2
+{
+    color:black;
+}
+
 
 nav a:hover
 {
@@ -73,15 +78,12 @@ nav a:hover
     
 }
 
-/*
-#inscription
+.inscription
 {
     color:#0065FC;
-    font-weight: bold;
-    padding: 34px 32px 16px 32px;
-    border-top: 3px solid transparent; 
+    font-weight: bold; 
 }
-*/
+
 
 /* Main */
 
@@ -122,12 +124,6 @@ main
     width: 222px;
 }
 
-
-.recherche_input::placeholder
-{
-    color:black;
-    font-family: 'Raleway', sans-serif;
-}
 
 .bouton_recherche
 {
@@ -221,14 +217,253 @@ main
 
 /* Section 3 - Hébergements  */
 
+#hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    max-height: 640px;
+}
+
+    /* Hébergements main */
+
+#hebergement_main
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    max-width: 950px;
+    padding: 40px 0;
+    margin-right: 20px;
+}
+
+#hebergement_main h2
+{
+    padding-left: 50px;
+    margin: 0;
+}
+
+#hebergement_vignette
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.lien_hebergement
+{
+    margin: 15px 10px 20px 10px;
+}
+
+.hebergement_vignette_cadre
+{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 5px 16px #DCDCDC;
+    padding: 5px 5px 10px 5px;
+}
+
+.hebergement_vignette_cadre:hover 
+{
+    box-shadow: none;
+}
+
+.hebergement_vignette_cadre h3
+{
+    padding-left: 12px;
+    margin: 4px 0 0 0;
+}
+
+.hebergement_vignette_cadre p
+{
+    padding-left: 12px;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.hebergement_vignette_main_image
+{
+    width: 235px;
+    height: 115px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.etoiles
+{
+    padding-left: 12px;
+    color:#0065FC;
+    font-size: 12px;
+}
+
+.gris
+{
+    color: #DCDCDC;
+}
+
+#plus
+{
+    font-weight: bold;
+    padding-left: 50px;
+    width: 100%;
+}
+
+
+
+    /* Hébergements populaires */
+
+
+#hebergement_populaire
+{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    padding: 40px 20px 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+}
+
+#hebergement_populaire h2
+{
+    margin: 0;
+}
+
+#hebergement_populaire .fa-chart-line 
+{
+    margin-left: 100px;
+}
+
+.hebergement_populaire_vignette
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.lien_populaire 
+{
+    margin: 15px 0 20px 0;
+}
+
+.cadre_populaire 
+{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 5px 16px #DCDCDC;
+    display: flex;
+    width: 334px;
+    height: 134px;
+    padding: 5px;
+}
+
+.cadre_populaire:hover 
+{
+    box-shadow: none;
+}
+
+.hebergement_vignette_populaire_image
+{
+    width: 127px;
+    height: 134px;
+    object-fit: cover;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+
+.texte_populaire h3
+{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.texte_populaire p
+{
+    padding-left: 20px;
+    margin-bottom: 32px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.texte_populaire .etoiles
+{
+    padding-left: 20px;
+}
+
 
 
 
 
 /* Section 4 - Activités  */
 
+#activites
+{
+    display: flex;
+    margin: 32px;
+}
 
 
+.activite_image
+{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activite_vignette
+{
+    border-radius: 32px;
+    box-shadow: 5px 5px 16px #DCDCDC;
+    cursor: pointer; 
+    width: 30%;
+    overflow: hidden;
+    
+
+}
+
+
+.activite_titre
+{
+    margin: 16px 16px;
+}
+
+
+.activite_vignette1
+{
+    
+}
+
+.activite_vignette2
+{
+   
+}
+
+.activite_vignette3
+{
+    
+}
+
+.activite_vignette4
+{
+
+}
+
+.activite_vignette5
+{
+
+}
+
+.activite_vignette6
+{
+
+}
 
 
 /* Footer */
@@ -241,13 +476,13 @@ footer
 
 h3
 {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: bold;
 }
 
 footer p
 {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 #bottom
