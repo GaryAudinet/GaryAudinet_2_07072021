@@ -36,7 +36,6 @@ header
     align-items: center;
     padding-top: 32px;
     padding-bottom: 16px;
-    
 }
 
 /* Navigation */
@@ -47,7 +46,6 @@ header
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    
 }
 
 nav ul
@@ -75,7 +73,7 @@ nav a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    
+   
 }
 
 .inscription
@@ -84,13 +82,22 @@ nav a:hover
     font-weight: bold; 
 }
 
-
 /* Main */
 
 main
 {
     max-width: 1440px;
     margin: auto;
+}
+
+#titre h1
+{
+    margin-bottom: 0;
+}
+
+#titre p
+{
+    margin-top: 8px;
 }
 
 /* Section 1 - Recherche  */
@@ -124,7 +131,6 @@ main
     width: 222px;
 }
 
-
 .bouton_recherche
 {
     background-color: #0065FC;
@@ -138,9 +144,7 @@ main
     font-family: 'Raleway', sans-serif;
 }
 
-
 /* Section 2 - Filtres  */
-
 
 #filtres 
 {
@@ -186,7 +190,6 @@ main
     margin: 0 16px;
 }
 
-
 .filtre:hover
 {
     color: #0065FC;
@@ -212,8 +215,7 @@ main
     height: 32px;
     width: 32px;
     margin-right: 16px;
-  }
-  
+}
 
 /* Section 3 - Hébergements  */
 
@@ -310,10 +312,7 @@ main
     width: 100%;
 }
 
-
-
     /* Hébergements populaires */
-
 
 #hebergement_populaire
 {
@@ -376,7 +375,6 @@ main
     border-top-left-radius: 16px;
 }
 
-
 .texte_populaire h3
 {
     padding-left: 20px;
@@ -397,74 +395,78 @@ main
     padding-left: 20px;
 }
 
-
-
-
-
 /* Section 4 - Activités  */
 
 #activites
 {
-    display: flex;
-    margin: 32px;
+   margin-bottom: 64px;
+   margin-top: 32px;
 }
 
+.vignette_activite
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 450px;
+    margin-top: 16px;
+}
+
+.lien_activite
+{
+    border-radius: 16px;
+    box-shadow: 5px 5px 16px #DCDCDC;
+}
+
+.lien_activite:hover 
+{
+    box-shadow: none;
+}
 
 .activite_image
 {
-    height:100%;
-    width: 100%;
     object-fit: cover;
+    width: 325px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
-
-.activite_vignette
-{
-    border-radius: 32px;
-    box-shadow: 5px 5px 16px #DCDCDC;
-    cursor: pointer; 
-    width: 30%;
-    overflow: hidden;
-    
-
-}
-
 
 .activite_titre
 {
     margin: 16px 16px;
 }
 
-
-.activite_vignette1
+.activite_image1
 {
-    
+    height: 395px;
 }
 
-.activite_vignette2
+.activite_image2
 {
-   
+    height: 180px;
 }
 
-.activite_vignette3
+.activite_image3
 {
-    
+    height: 115px;
 }
 
-.activite_vignette4
+.activite_image4
 {
-
+    height: 395px;
 }
 
-.activite_vignette5
+.activite_image5
 {
-
+    height: 140px;
 }
 
-.activite_vignette6
+.activite_image6
 {
-
+    height: 155px;
 }
-
 
 /* Footer */
 
@@ -486,18 +488,16 @@ footer p
 }
 
 #bottom
- {
+{
   display: flex;
   max-width: 100%;
   width: 1440px;
   margin: auto;
   padding: 0px 32px;
-
 }
 
 .class_bottom
 {
     width: 30%;
     padding: 32px 32px;
-   
 }
