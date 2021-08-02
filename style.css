@@ -415,7 +415,7 @@ main
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
-    height: 450px;
+    height: 500px;
     margin-top: 16px;
 }
 
@@ -445,32 +445,32 @@ main
 
 .activite_image1
 {
-    height: 395px;
+    height: 445px;
 }
 
 .activite_image2
 {
-    height: 180px;
+    height: 210px;
 }
 
 .activite_image3
 {
-    height: 115px;
+    height: 135px;
 }
 
 .activite_image4
 {
-    height: 395px;
+    height: 445px;
 }
 
 .activite_image5
 {
-    height: 140px;
+    height: 165px;
 }
 
 .activite_image6
 {
-    height: 155px;
+    height: 180px;
 }
 
 /* Footer */
