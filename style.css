@@ -53,7 +53,8 @@ nav ul
     display: flex;
     align-items: center;
     list-style-type: none;
-    
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .nav a
@@ -157,7 +158,8 @@ main
 {
     display: flex;
     align-items: center;
-    margin: 0 32px 16px 0;  
+    margin: 0 32px 16px 0;
+    font-size: 18px;
 }
 
 .filtre
@@ -166,8 +168,7 @@ main
     align-items: center;
     font-weight: bold;
     border: 2px solid #DCDCDC;
-    margin-right: 32px;
-    margin-bottom: 16px;
+    margin: 0 32px 16px 0; 
     border-radius: 32px;
     cursor: pointer;
 }
@@ -180,14 +181,15 @@ main
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
     margin: -2px;
 }
 
 .filtre_titre
 {
-    margin: 0 16px;
+    margin: 0px 16px;
+    font-size: 18px;
 }
 
 .filtre:hover
@@ -212,9 +214,10 @@ main
     color: #0065FC;
     border: solid 1px #DCDCDC;
     border-radius: 100%;
-    height: 32px;
-    width: 32px;
-    margin-right: 16px;
+    height: 25px;
+    width: 25px;
+    margin-right: 12px;
+    font-size: 12px;
 }
 
 /* Section 3 - Hébergements  */
@@ -223,7 +226,7 @@ main
 {
     display: flex;
     justify-content: space-between;
-    max-height: 640px;
+    max-height: 650px;
 }
 
     /* Hébergements main */
@@ -233,15 +236,15 @@ main
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    border-radius: 15px;
+    border-radius: 16px;
     max-width: 950px;
     padding: 40px 0;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #hebergement_main h2
 {
-    padding-left: 50px;
+    padding-left: 45px;
     margin: 0;
 }
 
@@ -255,7 +258,7 @@ main
 
 .lien_hebergement
 {
-    margin: 15px 10px 20px 10px;
+    margin: 16px 0px 16px 0px;
 }
 
 .hebergement_vignette_cadre
@@ -286,8 +289,8 @@ main
 
 .hebergement_vignette_main_image
 {
-    width: 235px;
-    height: 115px;
+    width: 250px;
+    height: 120px;
     object-fit: cover;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -308,8 +311,10 @@ main
 #plus
 {
     font-weight: bold;
-    padding-left: 50px;
+    padding-left: 45px;
     width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
     /* Hébergements populaires */
@@ -333,7 +338,7 @@ main
 
 #hebergement_populaire .fa-chart-line 
 {
-    margin-left: 100px;
+    margin-left: 110px;
 }
 
 .hebergement_populaire_vignette
@@ -353,11 +358,11 @@ main
 .cadre_populaire 
 {
     background-color: white;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 5px 5px 16px #DCDCDC;
     display: flex;
-    width: 334px;
-    height: 134px;
+    width: 350px;
+    height: 140px;
     padding: 5px;
 }
 
@@ -368,11 +373,11 @@ main
 
 .hebergement_vignette_populaire_image
 {
-    width: 127px;
-    height: 134px;
+    width: 135px;
+    height: 140px;
     object-fit: cover;
-    border-bottom-left-radius: 16px;
-    border-top-left-radius: 16px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
 .texte_populaire h3
@@ -385,7 +390,7 @@ main
 .texte_populaire p
 {
     padding-left: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 38px;
     margin-top: 10px;
     font-size: 14px;
 }
