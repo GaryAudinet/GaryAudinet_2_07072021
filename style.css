@@ -7,8 +7,12 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: auto;
 }
+
+/*
+overflow-x: hidden;
+*/
 
 h1
 {
@@ -45,6 +49,22 @@ header
     {
         margin-left: 20px;
         max-width: 100%;
+    }
+
+}
+
+@media all and (min-width: 375px) and (max-width: 767px) 
+{
+    header
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #logo
+    {
+        padding-left: 20px;
+        padding-bottom: 20px;
     }
 
 }
@@ -118,14 +138,32 @@ nav a:hover
         justify-content: flex-start;
     }
 
-    .nav a
+    nav
     {
+        width: 100%;
+    }
+
+    nav ul
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li
+    {
+        width: 50%;
         border-bottom: 3px solid #DCDCDC;
+        padding-bottom: 16px;
+        text-align: center;
     }
     
     nav a:hover
     {
         border-top: none;
+    }
+
+    nav li:hover
+    {
         border-bottom: 3px solid #0065FC;
     }
 
@@ -176,7 +214,10 @@ main
 
 @media all and (min-width: 375px) and (max-width: 767px) 
 {
-
+    #titre
+    {
+        margin: 0 0 32px 20px;
+    }
 }
 
 /* Section 1 - Recherche  */
@@ -194,6 +235,7 @@ main
     background-color: #F2F2F2;
     border-radius: 16px 0px 0px 16px;
     padding: 16px 22px;
+    font-size: larger;
 }
 
 .recherche_input
@@ -225,6 +267,7 @@ main
 .fa-search
 {
     display: none !important;
+    font-size: large;
 }
 
 @media all and (max-width: 1200px)
@@ -304,6 +347,7 @@ main
     height: 50px;
     width: 50px;
     margin: -2px;
+    font-size: larger;
 }
 
 .filtre_titre
@@ -370,6 +414,11 @@ main
     #filtres h2
     {
         width: 100%;
+    }
+
+    .filtre2
+    {
+        margin-right: 50%;
     }
 }
 
@@ -746,7 +795,7 @@ main
 {
     border-radius: 16px;
     box-shadow: 5px 5px 16px #DCDCDC;
-    width: 325px;
+    width: 23%;
 }
 
 .lien_activite:hover 
@@ -852,11 +901,6 @@ main
     }
 }
 
-/*  
-width: max-content;
-  */
-
-
 /* Footer */
 
 footer
@@ -879,30 +923,33 @@ footer p
 #bottom
 {
   display: flex;
-  max-width: 100%;
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
-  padding: 0px 32px;
 }
 
 .class_bottom
 {
     width: 30%;
-    padding: 32px 32px;
+    padding: 32px 0px;
+}
+
+@media all and (max-width: 1500px)
+{
+    .class_bottom
+    {
+        padding: 32px 2%;
+        width: 35%;
+    }
 }
 
 @media all and (max-width: 1200px)
 {
     .class_bottom
     {
-        padding: 32px 0px;
+        padding: 32px 20px;
         width: 35%;
     }
 
-    #bottom
-    {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 768px)
