@@ -321,7 +321,7 @@ main
 #plus
 {
     font-weight: bold;
-    padding-left: 4%;
+    padding: 16px 0 0 4%;
     width: 100%;
     font-size: 18px;
     margin-top: 5px;
@@ -489,11 +489,18 @@ h3
 {
     font-size: 16px;
     font-weight: bold;
+    margin-bottom: 32px;
 }
 
-footer p
+footer li
 {
     font-size: 16px;
+    margin: 16px 0;
+}
+
+footer li:hover
+{
+    text-decoration: underline;
 }
 
 #bottom
@@ -508,6 +515,8 @@ footer p
 {
     width: 35%;
     padding: 32px 0px;
+    list-style: none;
+    margin: 0;
 }
 
 
@@ -679,6 +688,7 @@ footer p
     {
         border-radius: 16px;
         padding: 0px 16px;
+        margin-left: -12px;
     }
 
     .fa-search
@@ -819,7 +829,7 @@ footer p
 
     #plus
     {
-        padding-left: 2%;
+        padding: 20px 0 26px 2%;
         margin-top: 0;
     }
 }
@@ -838,7 +848,7 @@ footer p
 
     #plus
     {
-        padding-left: 3%;
+        padding: 20px 0 26px 3%;
     }
 }
 
@@ -859,6 +869,7 @@ footer p
     #plus
     {
         padding-left: 5%;
+        padding: 20px 0 26px 5%;;
     }
 }
 
@@ -1030,10 +1041,5 @@ footer p
     {
         padding: 0 0 10px 0;
         width: auto;
-    }
-
-    .class_bottom p
-    {
-        margin: 10px 0;
     }
 }
