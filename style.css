@@ -879,6 +879,27 @@ footer li a:hover
     }
 }
 
+@media all and (max-width: 767px) and (orientation: landscape)
+{
+    .lien_hebergement
+    {
+        width: 45%;
+        margin: 8px 10px;
+    }
+
+    #hebergement_main h2 
+    {
+        padding-left: 5%;
+        padding-bottom: 8px;
+    }
+
+    #plus
+    {
+        padding-left: 5%;
+        padding: 20px 0 26px 5%;;
+    }
+}
+
     /* Hébergements populaires */
 
 @media all and (max-width: 1200px)
@@ -1017,6 +1038,19 @@ footer li a:hover
     .lien_activite
     {
         width: 90%;
+    }
+
+    #activites h2
+    {
+        padding-left: 5%;
+    }
+}
+
+@media all and (max-width: 767px) and (orientation: landscape)
+{
+    .lien_activite
+    {
+        width: 45%;
     }
 
     #activites h2
