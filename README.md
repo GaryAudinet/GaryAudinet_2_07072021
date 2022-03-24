@@ -1,4 +1,4 @@
-# GaryAudinet_2_07072021 - Projet: Transformez une maquette en site web
+# Projet: Transformez une maquette en site web
 
 ## Cahier des charges
 
